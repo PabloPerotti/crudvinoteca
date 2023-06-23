@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{asset('assets/login-estilos.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/registrarse-estilos.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
 <body>
 
   <main class="container">
-    
+
   @yield('content')
 </main>
 
