@@ -10,8 +10,8 @@
             </div>
             <div class="box">
                 <form class="form" method="POST" action="./login">
-                  @csrf
-                  @include('layouts.partials.messages')
+                @csrf
+                @include('layouts.partials.messages')
                     <input type="text" name="username" class="usuario" placeholder="Usuario" required>
                     <input type="password" name="password" class="password" placeholder="Contraseña" required>
                     <input type="submit" class="button" value="Login">
