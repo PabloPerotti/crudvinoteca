@@ -10,6 +10,7 @@
             <div class="box">
                 <form method="POST" class="form" action="/register">
                     @csrf
+                    @include('layouts.partials.messages')
                     <input type="text" name="username" class="nombrecompleto" placeholder="Usuario" required>
                     <input type="email" name="email" class="correo" placeholder="email@ejemplo.com" required>
                     <input type="password"  name="password" class="password" placeholder="Contraseña" required>
@@ -19,6 +20,6 @@
             </div>
         </div>
     </main>
-    
+
 @endsection
 
