@@ -9,13 +9,13 @@
 
 	
 </head>
-<body>
+<body onclick="PlayAudio()">
 	<div class="slideshow">
 		<ul class="slider">
 			<li>
 				<img src="{{ url('assets/img/1.jpg')}}" alt="">
 				<section class="caption">
-					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
+					<a href="{{ url('home')}}"><img src="{{ url('assets/img/imagen 1.png')}}" alt=""></a>
 				</section>
 			</li>
 			<li>
@@ -61,9 +61,12 @@
 		<div class="right">
 			<span class="fa fa-chevron-right"></span>
 		</div>
-
+	<audio id="sliderAudio"  loop>
+		<source src="{{ url('assets/audio/cancion.mp3')}}" type="audio/mpeg">  
+		Este navegador no acepta formatos de audio
+		</audio>
 	</div>
-	<audio id="sliderAudio" src="https://music.apple.com/ar/album/ambiente-de-bosque/1135906254?i=1135906633" loop></audio>
+	
 	<script src="{{ url('assets/js/jquery-3.1.0.min.js')}}"></script>
 	<script src="{{ url('assets/js/main.js')}}"></script>
 </body>
