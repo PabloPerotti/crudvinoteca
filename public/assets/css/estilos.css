@@ -34,7 +34,7 @@ body{
 
 .slider li img{
 	width: 100%;
-	object-fit: cover;
+	height: 853px;
 }
 
 .slider .caption{
@@ -66,7 +66,7 @@ body{
 
 .pagination{
 	position: absolute;
-	top: 102%;
+	top: 95%;
 	width: 100%;
 
 	display: flex;
@@ -101,6 +101,21 @@ body{
 .right{
 	right: 10px;
 }
+/* Estilos para el slideshow */
+/* ... */
+
+/* Estilos adicionales para la música */
+.audio-control {
+	display: flex;
+	margin-top: 10px;
+    }
+
+.audio-control button {
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+
 
 
 @media screen and (max-width: 600px){

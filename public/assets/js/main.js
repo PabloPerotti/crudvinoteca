@@ -62,3 +62,22 @@ $(document).ready(function(){
 	}
 
 });
+// Obtenemos la referencia al elemento de audio
+const audio = document.getElementById('sliderAudio');
+
+// Obtenemos la referencia al botón de reproducción/pausa
+const audioControl = document.querySelector('.audio-control button');
+
+// Función para reproducir/pausar la música
+function toggleAudio() {
+    if (audio.paused) {
+    audio.play();
+    audioControl.textContent = 'Pausar';
+    } else {
+    audio.pause();
+    audioControl.textContent = 'Reproducir';
+    }
+}
+
+// Agregamos el evento de clic al botón de control de audio
+audioControl.addEventListener('click', toggleAudio);

@@ -7,8 +7,7 @@
 	<link rel="stylesheet" href="{{ url('assets/css/estilos.css')}}">
 	<link rel="stylesheet" href="{{ url('assets/css/font-awesome.css')}}">
 
-	<script src="{{ url('asset/js/jquery-3.1.0.min.js')}}"></script>
-	<script src="{{ url('asset/js/main.js')}}"></script>
+	
 </head>
 <body>
 	<div class="slideshow">
@@ -16,37 +15,37 @@
 			<li>
 				<img src="{{ url('assets/img/1.jpg')}}" alt="">
 				<section class="caption">
-					<h1>Entrar</h1>
+					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
 				</section>
 			</li>
 			<li>
 				<img src="{{ url('assets/img/2.jpg')}}" alt="">
 				<section class="caption">
-					<h1>Entrar</h1>
+					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
 				</section>
 			</li>
 			<li>
 				<img src="{{ url('assets/img/3.jpg')}}" alt="">
 				<section class="caption">
-					<h1>Entrar</h1>
+					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
 				</section>
 			</li>
 			<li>
 				<img src="{{ url('assets/img/4.jpg')}}" alt="">
 				<section class="caption">
-					<h1>Entrar</h1>
+					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
 				</section>
 			</li>
 			<li>
 				<img src="{{ url('assets/img/5.jpg')}}" alt="">
 				<section class="caption">
-					<h1>Entrar</h1>
+					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
 				</section>
 			</li>
 			<li>
 				<img src="{{ url('assets/img/6.jpg')}}" alt="">
 				<section class="caption">
-					<h1>Entrar</h1>
+					<a href="{{ url('home')}}"><h1>Entrar</h1></a>
 				</section>
 			</li>
 		</ul>
@@ -64,5 +63,8 @@
 		</div>
 
 	</div>
+	<audio id="sliderAudio" src="https://music.apple.com/ar/album/ambiente-de-bosque/1135906254?i=1135906633" loop></audio>
+	<script src="{{ url('assets/js/jquery-3.1.0.min.js')}}"></script>
+	<script src="{{ url('assets/js/main.js')}}"></script>
 </body>
 </html>
