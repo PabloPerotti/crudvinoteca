@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\contracts\Validation\Factory as ValidationFactory;
+use Illuminate\Validation\Factory as ValidationFactory;
 
 class LoginRequest extends FormRequest
 {
@@ -24,7 +24,12 @@ class LoginRequest extends FormRequest
             'password' =>'required',
         ];
     }
-
+/**
+     * Get the needed authorization credentials from the request.
+     *
+     * @return array
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     */
     public function getCredentials(){
         $username = $this->get('username');
         
@@ -39,6 +44,6 @@ class LoginRequest extends FormRequest
 
     public function isEmail($value){
         $factory = $this->container->make(ValidationFactory::class);
-        return !$factory->make(['username' => $value] , ['username' => 'email'])->fails();
+        return ! $factory->make(['username' => $value], ['username' => 'email'])->fails();
     }
 }
